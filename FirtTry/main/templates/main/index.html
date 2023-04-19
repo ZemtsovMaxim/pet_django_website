@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Обо мне
+{% endblock  %}
+
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h1>Меня зовут Максим. Я backend программист на python.</h1>
+    <button class ="btn btn-warning">Кнопочка</button>
+
+    {% for el in values %}
+        {% if el == 'Hello' %}
+            {% filter upper %}
+            <p>{{ el }}</p>
+            {%endfilter%}
+        {% endif %}
+    {% endfor %}
+
+{% endblock  %}
+
