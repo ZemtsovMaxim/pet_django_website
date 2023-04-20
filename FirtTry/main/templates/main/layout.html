@@ -25,29 +25,17 @@
             <li><a href="{% url 'news_home' %}">Новости</a></li>
         </ul>
         <ul class="navbar-social">
-            <li class="fa-brands fa-linkedin-in"><a href="#" title="Connect with me on Linkedin"></a></li>
-            <li class="fa-brands fa-github"><a href="#" title="Explore my github"></a></li>
-            <li class="fa-brands fa-instagram"><a href="#" title="Follow me on Instagram"></a></li>
-            <li class="fa-brands fa-telegram"><a href="#" title="Communicate with me by telegram"></a></li>
+            <a href="#" title="Connect with me on Linkedin"><li class="fa-brands fa-linkedin-in"></li></a>
+            <a href="#" title="Explore my github"><li class="fa-brands fa-github"></li></a>
+            <a href="#" title="Follow me on Instagram"><li class="fa-brands fa-instagram"></li></a>
+            <a href="#" title="Communicate with me by telegram"><li class="fa-brands fa-telegram"></li></a>
+            <a href="{% url 'registration' %}" title="Login"><li class="fa-solid fa-user"></li></a>
         </ul>
 
 
 
 
     </nav>
-
-
-    <aside>
-        <h3>Навигация</h3>
-        <ul>
-            <a href="{% url 'about' %}"><li><i class="fa-solid fa-house"></i>Обо мне</li></a>
-            <a href="{% url 'portfolio' %}"><li><i class="fa-solid fa-address-card"></i>Портфолио</li></a>
-            <a href="{% url 'contacts' %}"><li><i class="fa-brands fa-telegram"></i>Контакты</li></a>
-            <li><a href="{% url 'create' %}"><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button></a></li>
-        </ul>
-    </aside>
-
-
 
     <main>
         {% block content %}
